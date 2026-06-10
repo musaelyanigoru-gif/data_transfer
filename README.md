@@ -1,2 +1,280 @@
-# data_transfer
-Инструкция по переносу данных на iPhone
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>IPrime — Инструкция по переносу данных на новый iPhone</title>
+    <style>
+        /* Обнуление и базовые стили — полное соответствие оригиналу */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.5;
+            padding: 20px;
+        }
+
+        /* Контейнер как на оригинальном сайте */
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            padding: 32px 24px 48px;
+        }
+
+        /* Логотип и шапка */
+        .logo {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .logo svg {
+            max-width: 140px;
+            height: auto;
+        }
+
+        /* Заголовки */
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 12px;
+            letter-spacing: -0.3px;
+        }
+
+        .lead {
+            font-size: 17px;
+            color: #6e6e73;
+            text-align: center;
+            margin-bottom: 32px;
+            border-bottom: 1px solid #e9e9ef;
+            padding-bottom: 20px;
+        }
+
+        /* Карточка-предупреждение (чеклист) */
+        .checklist {
+            background-color: #f9f9fb;
+            border-left: 4px solid #007aff;
+            padding: 20px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+        .checklist p {
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+        .checklist ul {
+            margin-left: 20px;
+            color: #2c2c2e;
+        }
+        .checklist li {
+            margin-bottom: 6px;
+        }
+
+        /* Инструкция — шаги */
+        .step {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 28px;
+            align-items: flex-start;
+        }
+        .step-number {
+            background-color: #007aff;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 18px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .step-content {
+            flex: 1;
+        }
+        .step-content strong {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 6px;
+            color: #000;
+        }
+        .step-content p {
+            color: #3a3a3e;
+            margin: 0;
+        }
+
+        /* Поздравление */
+        .congrats {
+            background-color: #e8f3ff;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 36px 0 28px;
+        }
+        .congrats p {
+            font-size: 18px;
+            font-weight: 500;
+            color: #0055b3;
+        }
+
+        /* Кнопка / ссылка "На главную" (как на оригинале) */
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-link a {
+            display: inline-block;
+            background-color: #f5f5f7;
+            color: #007aff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 40px;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        .back-link a:hover {
+            background-color: #e9e9ef;
+        }
+
+        /* Футер, как на странице отзывов — минималистично */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 13px;
+            color: #8e8e93;
+            border-top: 1px solid #e9e9ef;
+            padding-top: 24px;
+        }
+
+        /* Адаптив */
+        @media (max-width: 550px) {
+            body {
+                padding: 12px;
+            }
+            .container {
+                padding: 20px 16px 36px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .step {
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Логотип компании (скопирован со страницы отзывов, сохранён стиль) -->
+    <div class="logo">
+        <svg width="140" height="40" viewBox="0 0 280 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="80" rx="16" fill="#F5F5F7"/>
+            <text x="20" y="52" font-family="Arial, sans-serif" font-weight="700" font-size="34" fill="#1D1D1F">IPrime</text>
+            <circle cx="230" cy="40" r="18" fill="#007AFF"/>
+            <text x="222" y="48" font-family="Arial" font-weight="600" font-size="24" fill="white">i</text>
+        </svg>
+    </div>
+
+    <h1>Как перенести данные на новый iPhone?</h1>
+    <div class="lead">
+        Следуйте этой простой инструкции, чтобы всё прошло гладко.
+    </div>
+
+    <!-- Чеклист: что нужно -->
+    <div class="checklist">
+        <p>✅ Для начала убедитесь, что у вас есть:</p>
+        <ul>
+            <li>Старый и новый iPhone</li>
+            <li>Зарядка для каждого (или Power Bank)</li>
+            <li>Ваш Apple ID и пароль к нему</li>
+            <li>Быстрый и стабильный Wi-Fi</li>
+        </ul>
+    </div>
+
+    <!-- Инструкция по шагам -->
+    <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+            <strong>Подготовка</strong>
+            <p>Включите новый iPhone и положите его рядом со старым. На старом iPhone должен быть включен Bluetooth и Wi-Fi.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+            <strong>Автоматическая связь</strong>
+            <p>После того как устройства свяжутся (это происходит автоматически), на старом iPhone появится окно «Настройка нового iPhone». Там будет круглая анимация. Нажмите «Продолжить».</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+            <strong>Сканирование</strong>
+            <p>На экране нового iPhone появится синее облачко из точек. Наведите на него камерой старого iPhone, как будто сканируете QR-код.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+            <strong>Безопасность</strong>
+            <p>Введите пароль от старого смартфона, настройте Face ID или Touch ID.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+            <strong>Выбор переноса</strong>
+            <p>На новом устройстве появится меню выбора переноса данных. Выберите «Прямая передача с iPhone». <strong>Важно:</strong> с этого момента устройства должны всё время находиться рядом.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">6</div>
+        <div class="step-content">
+            <strong>Ожидание</strong>
+            <p>На старом устройстве появится шкала загрузки. Процесс может быть долгим — подключите оба iPhone к зарядке, если уровень батареи низкий.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">7</div>
+        <div class="step-content">
+            <strong>Финишная настройка</strong>
+            <p>По завершении переноса новый iPhone перезагрузится и на нём появятся все иконки. Некоторые приложения будут подгружаться в фоновом режиме. Имейте в виду: придётся заново войти во все аккаунты, например, в банковских приложениях и соцсетях.</p>
+        </div>
+    </div>
+
+    <!-- Поздравление с успехом -->
+    <div class="congrats">
+        <p>🎉 Поздравляем, Ваш iPhone готов к использованию! 🎉</p>
+    </div>
+
+    <!-- Ссылка как на оригинальном сайте (на страницу с отзывами) -->
+    <div class="back-link">
+        <a href="https://iprimeru.github.io/iprime-bg/">← Оставить отзыв о магазине</a>
+    </div>
+
+    <div class="footer">
+        IPrime — забота о ваших устройствах
+    </div>
+</div>
+
+</body>
+</html>
